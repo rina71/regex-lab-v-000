@@ -30,7 +30,7 @@ end
 def valid_phone_number?(phone)
   # if phone.match(/([a-zA-Z])/)
   # binding.pry
-  result = phone.scan(/(\d{10})(\(\d{3}\)\d{3}-\d{4})(\(\d{3}\)\d{3}\d{4})(\d{3}\s\d{3}\s\d{4})/)
+  result = phone.scan(/(\d{10})|(\(\d{3}\)\d{3}-\d{4})|(\(\d{3}\)\d{3}\d{4})|(\d{3}\s\d{3}\s\d{4})/)
   print(result)
   print("\n")
   result.any?
